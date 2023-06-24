@@ -38,13 +38,13 @@ while True:
 
             if all(finger_fold_status):
                 if lm_list[thumb_tip].y < lm_list[thumb_tip-1].y < lm_list[thumb_tip-2].y:
-                    print("CURTI")  
-                    cv2.putText(img ,"CURTI", (20,30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 3)
+                    print("Like")  
+                    cv2.putText(img ,"Like", (20,30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 3)
 
                 #verificando se o polegar está para baixo
                 if lm_list[thumb_tip].y > lm_list[thumb_tip-1].y > lm_list[thumb_tip-2].y:
-                    print("NÃO CURTI")   
-                    cv2.putText(img ,"NÃO CURTI", (20,30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 3)
+                    print("Dislike")   
+                    cv2.putText(img ,"Dislike", (20,30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 3)
 
 
 
