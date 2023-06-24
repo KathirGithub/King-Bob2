@@ -19,7 +19,7 @@ while True:
     if results.multi_hand_landmarks:
         for hand_landmark in results.multi_hand_landmarks:
             lm_list=[]
-            for id ,lm in enumerate(hand_landmark.landmark):
+            for id ,lm in list(hand_landmark.landmark):
                 lm_list.append(lm)
 
             finger_fold_status =[]
